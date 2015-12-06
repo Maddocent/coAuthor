@@ -24,60 +24,23 @@ add_pubs<-function(postdoc) {
 
 #Add people here using the PubMed search queries
 #pmq creates the query, then add_pubs performs the query and adds them to the existing publication list
-pmq<-EUtilsSummary(query="maenner m", db="pubmed")
+pmq<-EUtilsSummary(query="teunis ma", db="pubmed")
 obj<-add_pubs(pmq)
   
-pmq2<-EUtilsSummary(query="(shattuck paul[Author]) NOT heart[Title]", db="pubmed")
+pmq2<-EUtilsSummary(query="pieters rhh, db="pubmed")
 obj<-add_pubs(pmq2)
 
-pmq3<-EUtilsSummary(query="wong jen d", db="pubmed")
+pmq3<-EUtilsSummary(query="krul cam", db="pubmed")
 obj<-add_pubs(pmq3)
 
-pmq4<-EUtilsSummary(query="esbensen aj", db="pubmed")
+pmq4<-EUtilsSummary(query="vaessen s", db="pubmed")
 obj<-add_pubs(pmq4)
 
-pmq5<-EUtilsSummary(query='(woodman ac[Author]) AND ("2011/12/31"[Date - Publication] : "3000"[Date - Publication])', db="pubmed")
-obj<-add_pubs(pmq5)
+#pmq5<-EUtilsSummary(query="verkoeijen s", db="pubmed")
+#obj<-add_pubs(pmq5)
 
-pmq6<-EUtilsSummary(query='(barker et[Author]) AND ("2006/12/31"[Date - Publication] : "3000"[Date - Publication])', db="pubmed")
-obj<-add_pubs(pmq6)
-
-pmq7<-EUtilsSummary(query="(smith leann[Author]) NOT lymphoma[Title])", db="pubmed")
-obj<-add_pubs(pmq7)
-
-pmq8<-EUtilsSummary(query="(taylor julie lounds[Author]) OR lounds julie[Author]", db="pubmed")
-obj<-add_pubs(pmq8)
-
-pmq9<-EUtilsSummary(query="sterling audra", db="pubmed")
-obj<-add_pubs(pmq9)
-
-pmq10<-EUtilsSummary(query="hartley sl NOT sleep[Title] NOT ceroid[Title]", db="pubmed")
-obj<-add_pubs(pmq10)
-
-pmq11<-EUtilsSummary(query="bishop somer", db="pubmed")
-obj<-add_pubs(pmq11)
-
-pmq12<-EUtilsSummary(query="(orsmond gael[Author]) OR orsmond gi[Author]", db="pubmed")
-obj<-add_pubs(pmq12)
-
-pmq13<-EUtilsSummary(query='(baker jason[Author]) not (baker JV[Author]) not (obesity[Title]) not (insulin[Title]) not (HIV[Title]) not (Cardiovascular[Title]) not (gastroparesis[Title]) not (baker JD[Author]) not (baker JB[Author]) not (gloves[Title]) not (baker JR[Author]) not (baker JW[Author]) AND ("2006/12/31"[Date - Publication] : "3000"[Date - Publication])', db="pubmed")
-obj<-add_pubs(pmq13)
-
-pmq14<-EUtilsSummary(query='(Parish sl[Author]) OR parish susan[Author]', db="pubmed")
-obj<-add_pubs(pmq14)
-
-pmq15<-EUtilsSummary(query='(Song Jieun[Author]) not (cells[Title]) not (ligands[Title]) not (anesthesia[Title]) not  (vitro[Title]) not (overpotential[Title]) not (kinase[Title]) not (nucleation[Title]) not (catalysts[Title]) not (film[Title]) not (transcriptional[Title])', db="pubmed")
-obj<-add_pubs(pmq15)
-
-pmq16<-EUtilsSummary(query='(Hong Jinkuk[Author]) ', db="pubmed")
-obj<-add_pubs(pmq16)
-
-pmq17<-EUtilsSummary(query='(anderson kristy a[Author]) and autism', db="pubmed")
-obj<-add_pubs(pmq17)
-        
-pmq18<-EUtilsSummary(query='(magana s[Author]) not(spinal[Title]) not(antibody[Title]) not(lumbar[Title]) not(tumor[Title]) not(ultrafiltration[Title]) not(scoliosis[Title]) not(inflammatory[Title]) not(posterior[Title]) not(magana setty[Author]) not(kidney[Title]) not(arterial[Title]) not(biosensor[Title]) not(hemodialysis[Title])', db="pubmed")
-obj<-add_pubs(pmq18)
-
+#pmq6<-EUtilsSummary(query="ten klooster jp", db="pubmed")
+#obj<-add_pubs(pmq6)
 
 authlist<-obj$authlist
 
